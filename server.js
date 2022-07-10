@@ -16,10 +16,10 @@ app.use("/api/recipe", require("./routes/api/recipe"));
 
 if (process.env.NODE_ENV === "production") {
   //set static folder
-  app.use(express.static("recipe/build"));
+  app.use(express.static("client/build"));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "recipe", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
