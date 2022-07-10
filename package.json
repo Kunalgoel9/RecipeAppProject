@@ -1,20 +1,8 @@
 {
-  "name": "college-connector",
+  "name": "recipe-app",
   "version": "1.0.0",
-  "description": "Social network for college students",
+  "description": "app for recipes",
   "main": "server.js",
-  "engines": {
-    "node": "14.18.2"
-  },
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "author": "Kunal",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
@@ -28,5 +16,22 @@
   "devDependencies": {
     "concurrently": "^6.0.1",
     "nodemon": "^2.0.7"
-  }
+  },
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunalgoel9/RecipeAppProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kunalgoel9/RecipeAppProject/issues"
+  },
+  "homepage": "https://github.com/Kunalgoel9/RecipeAppProject#readme"
 }
