@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://kunal:kunal123@cluster0.eqjaq.mongodb.net/?retryWrites=true&w=majority",
+  "jsonSecret": "mylittleSecret"
+}
