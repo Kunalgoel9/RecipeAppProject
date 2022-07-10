@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Social network for college students",
   "main": "server.js",
+  "engines": {
+    "node": "14.18.2"
+  },
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
