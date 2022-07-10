@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "app for recipes",
   "main": "server.js",
+  "engines": {
+    "node": "14.18.2"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
